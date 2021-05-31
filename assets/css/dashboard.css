@@ -503,3 +503,100 @@
     transform: scale(0);
     transition: all .3s;
 }
+.widget-traffic-info .widget-heading .task-action .dropdown-toggle svg {
+    color: #888ea8;
+    width: 19px;
+    height: 19px;
+}
+.widget-traffic-info .widget-heading .task-action .dropdown-menu {
+    transform: translate3d(-141px, 0, 0px);
+}
+.widget-traffic-info .widget-content {
+    font-size: 17px;
+}
+.widget-traffic-info .widget-content .summary-list {
+    position: relative;
+    padding: 15px;
+    background: rgb(224 230 237 / 40%);
+    border-radius: 6px;
+}
+.widget-traffic-info .widget-content .summary-list.summary-income {
+    background: rgb(220 207 247 / 34%);
+}
+.widget-traffic-info .widget-content .summary-list.summary-profit {
+    background: rgb(186 231 255 / 34%);
+}
+.widget-traffic-info .widget-content .summary-list.summary-expenses {
+    background: rgb(255 236 203 / 34%);
+}
+.widget-traffic-info .widget-content .summary-list .summery-info {
+    display: flex;
+    margin-bottom: 0;
+}
+.widget-traffic-info .widget-content .summary-list:not(:last-child) {
+    margin-bottom: 9px;
+}
+.widget-traffic-info .widget-content .w-icon {
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    margin-right: 12px;
+}
+.widget-traffic-info .widget-content .w-icon svg {
+    display: block;
+    width: 22px;
+    height: 22px;
+    stroke-width: 1px;
+}
+.widget-traffic-info .widget-content .summary-list:nth-child(1) .w-icon svg {
+    color: #805dca;
+    fill: rgb(92 26 195 / 16%);
+}
+.widget-traffic-info .widget-content .summary-list:nth-child(2) .w-icon svg {
+    color: #2196f3;
+    fill: rgb(33 150 243 / 16%);
+}
+.widget-traffic-info .widget-content .summary-list:nth-child(3) .w-icon svg {
+    color: #e2a03f;
+    fill: rgb(226 160 63 / 16%);
+}
+.widget-traffic-info .widget-content .w-summary-details {
+    width: 100%;
+    align-self: center;
+}
+.widget-traffic-info .widget-content .w-summary-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1px;
+}
+.widget-traffic-info .widget-content .w-summary-info h6 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #888ea8;
+}
+.widget-traffic-info .widget-content .w-summary-info .summary-count {
+    display: block;
+    font-size: 16px;
+    margin-top: 4px;
+    font-weight: 600;
+    color: #515365;
+}
+.widget-traffic-info .widget-content .w-summary-info .summary-average {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #888ea8;
+}
+.widget-traffic-info .widget-content .summary-list.summary-income .w-summary-info .summary-average {
+    color: #805dca;
+}
+.widget-traffic-info .widget-content .summary-list.summary-profit .w-summary-info .summary-average {
+    color: #2196f3;
+}
+.widget-traffic-info .widget-content .summary-list.summary-expenses .w-summary-info .summary-average {
+    color: #e2a03f;
+}
