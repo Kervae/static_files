@@ -1,6 +1,6 @@
-@import url('main.css');
+@import url('main.min.css');
 @import url('https://cdn.jsdelivr.net/npm/perfect-scrollbar@1.4.0/css/perfect-scrollbar.css');
-@import url('structure.css');
+@import url('structure.min.css');
 /*
     Importing highlight.js CSS code 
 
