@@ -101,9 +101,14 @@ var BrowserDetect = {
             identity: "Mac"
         },
         {
-               string: navigator.userAgent,
-               subString: "iPhone",
-               identity: "iPhone/iPad"
+		   string: navigator.userAgent,
+		   subString: "iPhone",
+		   identity: "iPhone/iPad"
+        },
+		{
+		   string: navigator.userAgent,
+		   subString: "Android",
+		   identity: "Android"
         },
         {
             string: navigator.platform,
