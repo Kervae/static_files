@@ -47,19 +47,19 @@ $("#create-sub").click(function() {
 	var emoji = $('#emoji').prop('checked') ? "true" : "false";
 	console.log("emoji: " + emoji);
 	if ($("#client option:selected").val().indexOf("surge") != -1) {
-		var return_url = sub_api + "?target=" + target + "&ver=" + ver + "&url=" + sub_link +
+		var return_url = sub_api + "?target=" + target + "&ver=" + ver + "&url=" + encodeURIComponent(sub_link) +
 			"&emoji=" + emoji +
 			"&insert=false&config=" + config_url + "&include=" +
 			encodeURIComponent($('#include').val()) + "&exclude=" + encodeURIComponent($('#exclude')
 				.val());
 	} else {
 		if (config !== "default") {
-			var return_url = sub_api + "?target=" + target + "&url=" + sub_link + "&emoji=" + emoji +
+			var return_url = sub_api + "?target=" + target + "&url=" + encodeURIComponent(sub_link) + "&emoji=" + emoji +
 				"&insert=false&config=" + config_url + "&include=" +
 				encodeURIComponent($('#include').val()) + "&exclude=" + encodeURIComponent($('#exclude')
 					.val());
 		} else {
-			var return_url = sub_api + "?target=" + target + "&url=" + sub_link + "&emoji=" + emoji +
+			var return_url = sub_api + "?target=" + target + "&url=" + encodeURIComponent(sub_link) + "&emoji=" + emoji +
 				"&insert=false&include=" +
 				encodeURIComponent($('#include').val()) + "&exclude=" + encodeURIComponent($('#exclude')
 					.val());
