@@ -591,7 +591,7 @@ $('.ssr-link,.ssr-qr,.ssr-config').click(function () {
                         $('#ssrinfomoal').modal();
                     } else {
                         //$('#ssrInfo').html('<pre style="color:#e83e8c">'+JSON.stringify(ssrNode['config'][index])+'</pre>');
-						$('#ssrInfo').jsonViewer(ssrNode['config'][index]);
+						$('#ssrInfo').jsonViewer(ssrNode['config'][index],{rootCollapsable: false});
                         $('#ssrinfomoal').modal();
                     }
                 }else{
