@@ -585,13 +585,15 @@ $('.ssr-link,.ssr-qr,.ssr-config').click(function () {
                         $('#ssrinfomoal').modal();
                     } else if ($(_this).hasClass('ssr-qr')) {
                         $('#ssrInfo').text('');
+						$('#ssrInfo').css('text-align','center');
                         $('#ssrInfo').qrcode({
                             "text": ssrNode.link[index]
                         });
                         $('#ssrinfomoal').modal();
                     } else {
                         //$('#ssrInfo').html('<pre style="color:#e83e8c">'+JSON.stringify(ssrNode['config'][index])+'</pre>');
-						$('#ssrInfo').jsonViewer(ssrNode['config'][index],{rootCollapsable: false,withLinks: false});
+						split = '{server' + ssrNode['config'][index].split('server')[1];
+						$('#ssrInfo').jsonViewer(split, {rootCollapsable: false, withLinks: false});
                         $('#ssrinfomoal').modal();
                     }
                 }else{
