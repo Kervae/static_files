@@ -591,10 +591,7 @@ $('.ssr-link,.ssr-qr,.ssr-config').click(function () {
                         });
                         $('#ssrinfomoal').modal();
                     } else {
-                        //$('#ssrInfo').html('<pre style="color:#e83e8c">'+JSON.stringify(ssrNode['config'][index])+'</pre>');
-						jsoninfo = ssrNode['config'][index];
-						split = '{server' + jsoninfo.split('server')[1];
-						$('#ssrInfo').jsonViewer(split, {rootCollapsable: false, withLinks: false});
+						$('#ssrInfo').jsonViewer(ssrNode['config'][index],{rootCollapsable: false,withLinks: false});
                         $('#ssrinfomoal').modal();
                     }
                 }else{
