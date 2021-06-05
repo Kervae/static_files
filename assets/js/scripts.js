@@ -581,16 +581,18 @@ $('.ssr-link,.ssr-qr,.ssr-config').click(function () {
                 /* Read more about isConfirmed, isDenied below */
                 if (result.isConfirmed) {
                     if ($(_this).hasClass('ssr-link')) {
+						$('#ssrInfo').css('text-align','center'); // text in center
                         $('#ssrInfo').html(ssrNode.link[index]);
                         $('#ssrinfomoal').modal();
                     } else if ($(_this).hasClass('ssr-qr')) {
                         $('#ssrInfo').text('');
-						$('#ssrInfo').css('text-align','center');
+						$('#ssrInfo').css('text-align','center'); // text in center
                         $('#ssrInfo').qrcode({
                             "text": ssrNode.link[index]
                         });
                         $('#ssrinfomoal').modal();
                     } else {
+						$('#ssrInfo').css('text-align','left'); // text in left
 						$('#ssrInfo').jsonViewer(ssrNode['config'][index],{rootCollapsable: false,withLinks: false});
                         $('#ssrinfomoal').modal();
                     }
