@@ -527,7 +527,7 @@ var ssrNode = {
 };
 
 function goTop(){
-window.location.href="/user/subscribe_set"; 
+        window.location.href="/user"; 
 }
 
 
