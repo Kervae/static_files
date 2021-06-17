@@ -52,7 +52,7 @@ function importSub(type){
 			isDownload(btoa(sub_link), 'shadowrocket://add/sub://', 'Shadowrocket');
 			break;
 		case 'surge':
-			isDownload(encodeURIComponent(sub_link), 'surge:///install-config?url=', 'Surge');
+			isDownload(encodeURIComponent(sub_link + '?t=' + (new Date()).valueOf()), 'surge:///install-config?url=', 'Surge');
 			break;
 		case 'quantumultx':
 			Swal.fire('导入失败', '暂不支持导入，请等待站长更新代码', 'error');
