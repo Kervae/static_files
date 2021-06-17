@@ -141,7 +141,7 @@ var App = function() {
             var getDropdownElement = document.querySelectorAll('.more-dropdown .dropdown-item');
             for (var i = 0; i < getDropdownElement.length; i++) {
                 getDropdownElement[i].addEventListener('click', function() {
-                    document.querySelectorAll('.more-dropdown .dropdown-toggle > img')[0].setAttribute('src', '/theme/cork/assets/img/' + this.getAttribute('data-img-value') + '.png' );
+                    document.querySelectorAll('.more-dropdown .dropdown-toggle > img')[0].setAttribute('src', 'https://cdn.jsdelivr.net/gh/zelang/static_files@main/assets/img/' + this.getAttribute('data-img-value') + '.png' );
                 })
             }
         },
