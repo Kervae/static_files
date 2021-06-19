@@ -20,7 +20,7 @@ $("#create-sub").click(function() {
 	var config = $("#config option:selected").val();
 	switch (config) {
 	case "default":
-		config_url = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR.ini";
+		config_url = "https://cdn.jsdelivr.net/gh/zelang/static_files@main/rules/Clash/config/ACL4SSR.ini";
 		break;
 	case "nourl":
 		config_url = "https://subconverter.oss-ap-southeast-1.aliyuncs.com/Rules/RemoteConfig/universal/no-urltest.ini";
