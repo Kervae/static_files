@@ -1,2 +1,2 @@
 # static_files
-some static files
+some static files for myself
