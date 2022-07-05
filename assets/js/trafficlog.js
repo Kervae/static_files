@@ -133,7 +133,7 @@ yaxis: {
 	formatter: function(value, index) {
 	  return value + 'MB'
 	},
-	offsetX: -22,
+	offsetX: 0,
 	offsetY: 0,
 	style: {
 		fontSize: '12px',
@@ -159,12 +159,13 @@ grid: {
 	top: 0,
 	right: 0,
 	bottom: 0,
-	left: -10
+	left: 5
   }, 
 }, 
 legend: {
   position: 'top',
   horizontalAlign: 'right',
+  floating: true,
   offsetY: -50,
   fontSize: '16px',
   fontFamily: 'Nunito, sans-serif',
@@ -180,7 +181,7 @@ legend: {
 	offsetY: 0
   },    
   itemMargin: {
-	horizontal: 0,
+	horizontal: 10,
 	vertical: 20
   }
 },
